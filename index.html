@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1 Using Tailwind</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- tailwind css Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                IBM:["IBM Plex Sans", "serif"],
+              }
+            }
+          }
+        }
+      </script>
+        <!-- remix icon -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-[#F5F5F5] overflow-x-hidden font-IBM">
+    <!-- header section -->
+     <header class="bg-white text-black  ">
+        <nav class="max-w-[1440px] mx-auto px-4 py-4 flex items-center justify-between ">
+            <!-- logo -->
+             <div class="flex items-center gap-5">
+                <img src="/ assets/HireGo.png" alt="">
+
+                 <!-- Menu Items -->
+                <a class="font-medium" href="#home">Products <i class="ri-arrow-down-s-line text-xl"></i></a>
+                <a class="font-medium" href="#home">Solutions <i class="ri-arrow-down-s-line text-xl"></i></a>
+                <a class="font-medium" href="#home">Why HireGo <i class="ri-arrow-down-s-line text-xl"></i></a>
+                <a class="font-medium" href="#home">Pricing <i class="ri-arrow-down-s-line text-xl"></i></a>
+                <a class="font-medium" href="#home">Resources <i class="ri-arrow-down-s-line text-xl"></i></a>
+             
+             </div>
+             <!-- navbar button -->
+              <div class="nav-btn-group flex justify-center items-center gap-4">
+                <button class="border space-x-2  border-gray-300 px-6 rounded-full py-2"><i class="ri-global-line mr-3"></i>English<i class="ri-arrow-down-s-line "></i></button>
+                <button class="border space-x-2 border-gray-300 px-5 rounded-full py-2">Login</button>
+                <button class="border bg-[#262626] text-white space-x-2 border-gray-300 px-5 rounded-full py-2">Request a demo</button>
+              </div>
+        </nav>
+     </header>
+
+     <!-- Hero Banner Section -->
+     <section class="py-32 bg-[#B1D8FC] rounded-es-[80px] ">
+        <div class="flex flex-col  md:flex-row items-center justify-between space-y-8 ">
+            <!-- text content -->
+             <div class=" pl-40">
+                <h1 class="font-semibold md:text-6xl   leading-[1.1] mb-3">HireGO is your <br>
+                    all-in-one <br>
+                    Global People Platform</h1>
+                <p class="flex gap-2 font-normal text-gray-700">
+                    <img src="/ assets/Check_ring.png" alt=""> G3's Leader in global employment platforms
+                </p>
+                <p class="flex gap-2 font-normal text-gray-700 mb-4">
+                    <img src="/ assets/Check_ring.png" alt=""> 90% customer satisfaction rate
+                </p>
+                <!-- hero single button -->
+                 <button class="bg-[#262626] text-white px-5 py-3 rounded-full">Request a demo<i class="ri-arrow-right-s-line"></i></button>
+             </div>
+             <!-- image -->
+              <div class=" relative top-32 left-24">
+                <img class="w-[700px]"  src="/ assets/1.png" alt="">
+              </div>
+        </div>
+     </section>
+
+     <!-- sponsor section -->
+      <section class="py-10">
+        <div class="max-w-[1440px] mx-auto  ">
+           <h1 class="font-semibold mt-28 text-center text-4xl text-[#8C8C8C] mb-14 ">Trusted by <span class="text-black">25,000+</span>  companies from <br> startups to enterprise</h1>
+
+           <!-- sponsor -->
+            <div class="flex flex-col gap-8">
+                <div class="grid grid-cols-3 md:grid-cols-7 sm:grid-cols-3 gap-8 place-items-center ">
+                    <img src="/ assets/shopify.png" alt="">
+                    <img src="/ assets/klarna.png" alt="">
+                    <img src="/ assets/reddit.png" alt="">
+                    <img src="/ assets/nike.png" alt="">
+                    <img src="/ assets/zapier.png" alt="">
+                    <img src="/ assets/nu.png" alt="">
+                    <img src="/ assets/felly_belly.png" alt="">
+                </div>
+                <div class="grid grid-cols-3 md:grid-cols-7 sm:grid-cols-3 gap-8 place-items-center ">
+                    <img src="/ assets/revolut.png" alt="">
+                    <img src="/ assets/forever_21.png" alt="">
+                    <img src="/ assets/redbull.png" alt="">
+                    <img src="/ assets/clavin_klein.png" alt="">
+                    <img src="/ assets/intercom.png" alt="">
+                    <img src="/ assets/hermes.png" alt="">
+                    <img src="/ assets/hello_fresh.png" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--services section  -->
+       <section class="py-10 bg-[#323232] rounded-[5%] sm:rounded-xl">
+        <div class="max-w-[1440px] mx-auto ">
+               <h1 class="text-5xl text-center mb-10 text-white font-semibold">You can do it all. <br>
+                With HireGO.</h1>
+
+                <div class="flex  flex-col md:flex-row sm:flex-col justify-center gap-8 items-center border-b-2 border-gray-700 pb-20">
+                    <!-- left card -->
+                    <div class="bg-[#464646] rounded-3xl p-6">
+                        <h2 class="text-white font-medium text-4xl mb-4">Hire international talent</h2>
+                        <p class="text-[#828282] mb-6">Instead of setting up your own entities, experience the speed of <br> HireGO’s automated global hiring. Create compliant employment <br> agreements and set up payroll and benefits—in a matter of clicks.</p>
+                        <a class="px-5 py-3 font-semibold bg-white rounded-full " href="">Hire international talent <i class="ri-arrow-right-line"></i></a>
+                        <div class="mt-10">
+                            <img src="/ assets/service.png" alt="">
+                        </div>
+                    </div>
+                    <!-- right card -->
+                    <div class="w-1/3  space-y-4">
+                        <!-- top -->
+                        <div class="bg-[#3a5c45] shadow-sm rounded-3xl px-6 py-6 pb-10">
+                            <h2 class="text-white font-medium text-4xl mb-4">Hire contractors</h2>
+                            <p class="text-[#828282] mb-6">Generate, edit, and sign compliant contracts in minutes and <br> access management tools to streamline paperwork, onboarding, <br> and payments.</p>
+                            <a class="px-5 py-3 font-semibold bg-white rounded-full " href="">Hire contractors <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                         <!-- bottom -->
+                        <div class="bg-[#b1d8fc] px-6 py-12 pb-20 rounded-3xl">
+                            <h2 class=" font-medium text-4xl mb-4">Convert contractors to <br> employees</h2>
+                            <p class="text-black pb-6">Assess global worker misclassification risks and compliantly convert contractors to full-timers, all under one platform.</p>
+                            <a class="px-5 py-3 font-semibold bg-white rounded-full " href="">Convert contractors <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- counter number -->
+                 <div class="grid grid-cols-1 md:grid-cols-3 place-items-center gap-8  mt-12">
+                    <div>
+                        <h1 class=" text-7xl text-[#b1d8fc] mb-4">5,000+</h1>
+                        <p class="text-[#808080]">Loved by 5,000+ Team Members</p>
+                    </div>
+                    <div>
+                        <h1 class=" text-7xl text-[#b1d8fc] mb-4">25,00+</h1>
+                        <p class="text-[#808080]">Trusted by 25,000+ customers</p>
+                    </div>
+                    <div>
+                        <h1 class=" text-7xl text-[#b1d8fc] mb-4">48 hrs</h1>
+                        <p class="text-[#808080]">Onboard talent in as little as 48 hours</p>
+                    </div>
+                 </div>
+        </div>
+       </section>
+
+    
+       <!-- section 4 -->
+        <section class="py-12">
+            <div class="max-w-[1240px] mx-auto">
+                <h1 class="text-5xl text-center  font-semibold mb-16 ">Take your business <br>
+                    to the next level.</h1>
+                <div class="flex  flex-col md:flex-row sm:flex-col-reverse justify-between items-center gap-7">
+                     <!-- text-content -->
+                     <div class="w-1/2">
+                        <h2 class="text-[#fd852f] font-medium text-5xl mb-4">Culture and performance. <br>  It’s up and up.</h2>
+                        <p class="text-[#828282] mb-12">Develop feedback loops, set KPIs and design custom performance <br> reviews. Quickly build a positive performance culture for your business <br> — where everyone is aiming for the same goals.</p>
+                        <a class="px-5 py-3 font-semibold bg-white rounded-full border border-gray-500 " href="">Performance Management <i class="ri-arrow-right-line"></i></a>
+                     </div>
+                     <!-- image -->
+                      <div class=" w-[900px]">
+                         <img class="w-full object-cover ml-[300px]" src="/ assets//image-3.png" alt="">
+                      </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 5 -->
+        <section class="py-12">
+            <div class="max-w-[1240px] mx-auto">
+                <div class="flex  flex-col md:flex-row-reverse sm:flex-col-reverse justify-between items-center gap-7 ">
+                     <!-- text-content -->
+                     <div class="">
+                        <h2 class="text-[#9148ee] font-medium text-5xl mb-4">It's payroll software. <br>
+                            Just faster.</h2>
+                        <p class="text-[#828282] mb-12">Save your time, pay your people with automated payroll. Enjoy the <br> benefits of Real Time Information (RTI) and take care of workforce <br> planning - all in one simple place.</p>
+                        <a class="px-5 py-3 font-semibold bg-white rounded-full border border-gray-500 " href="">Payroll Features <i class="ri-arrow-right-line"></i></a>
+                     </div>
+                     <!-- image -->
+                      <div class=" bg-[#f4edff]   w-[700px]">
+                         <img class="" src="/ assets/image-4.png" alt="">
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-6 -->
+         <section class="bg-[#323232] py-20 ">
+            <div class="max-w-[1240px] mx-auto  ">
+                <h1 class="text-5xl text-center text-white  font-semibold mb-16 ">We help teams grow faster <br> across borders.</h1>
+
+                <div class="flex sm:flex-col md:flex-row justify-start items-center   ">
+                    <!-- text-content -->
+                     <div class="w-1/2 bg-[#b1d8fc] py-[131px] px-10 rounded-s-2xl ">
+                        <img class="mb-10" src="/ assets/Frame 8737.png" alt="">
+                        <h2 class="text-black font-medium text-4xl mb-4">	“Saving time and simplifying the <br> process and saving money. It was the <br> triple trifecta.”</h2>
+                        <p class="font-medium mb-10">Ally Fekaiki, CEO - Soho, New York</p>
+                        <a class="px-5 py-3 font-semibold bg-white rounded-full border border-gray-500 " href="">Learn more <i class="ri-arrow-right-line"></i></a>
+                     </div>
+                     <!-- image -->
+                      <div class="w-1/2 ">
+                           <img class="rounded-e-2xl" src="/ assets/image-5.png" alt="">
+                      </div>
+                </div>
+            </div>
+         </section>
+</body>
+</html>
