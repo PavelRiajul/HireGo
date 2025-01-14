@@ -30,25 +30,37 @@
 <body class="bg-[#F5F5F5] overflow-x-hidden font-IBM">
     <!-- header section -->
      <header class="bg-white text-black  ">
-        <nav class="max-w-[1440px] mx-auto px-4 py-4 flex items-center justify-between ">
+        <nav class="max-w-[1440px]  container mx-auto px-4 py-4 flex items-center justify-between ">
             <!-- logo -->
              <div class="flex items-center gap-5">
                 <img src="/ assets/HireGo.png" alt="">
-
-                 <!-- Menu Items -->
-                <a class="font-medium" href="#home">Products <i class="ri-arrow-down-s-line text-xl"></i></a>
-                <a class="font-medium" href="#home">Solutions <i class="ri-arrow-down-s-line text-xl"></i></a>
-                <a class="font-medium" href="#home">Why HireGo <i class="ri-arrow-down-s-line text-xl"></i></a>
-                <a class="font-medium" href="#home">Pricing <i class="ri-arrow-down-s-line text-xl"></i></a>
-                <a class="font-medium" href="#home">Resources <i class="ri-arrow-down-s-line text-xl"></i></a>
-             
+                <div class="hidden md:block">
+ <!-- Menu Items -->
+ <a class="font-medium" href="#home">Products <i class="ri-arrow-down-s-line text-xl"></i></a>
+ <a class="font-medium" href="#home">Solutions <i class="ri-arrow-down-s-line text-xl"></i></a>
+ <a class="font-medium" href="#home">Why HireGo <i class="ri-arrow-down-s-line text-xl"></i></a>
+ <a class="font-medium" href="#home">Pricing <i class="ri-arrow-down-s-line text-xl"></i></a>
+ <a class="font-medium" href="#home">Resources <i class="ri-arrow-down-s-line text-xl"></i></a>
+                </div>
              </div>
              <!-- navbar button -->
-              <div class="nav-btn-group flex justify-center items-center gap-4">
-                <button class="border space-x-2  border-gray-300 px-6 rounded-full py-2"><i class="ri-global-line mr-3"></i>English<i class="ri-arrow-down-s-line "></i></button>
-                <button class="border space-x-2 border-gray-300 px-5 rounded-full py-2">Login</button>
-                <button class="border bg-[#262626] text-white space-x-2 border-gray-300 px-5 rounded-full py-2">Request a demo</button>
+              <div class="hidden md:block">
+                <div class="nav-btn-group flex justify-center items-center gap-4">
+                    <button class="border space-x-2  border-gray-300 px-6 rounded-full py-2"><i class="ri-global-line mr-3"></i>English<i class="ri-arrow-down-s-line "></i></button>
+                    <button class="border space-x-2 border-gray-300 px-5 rounded-full py-2">Login</button>
+                    <button class="border bg-[#262626] text-white space-x-2 border-gray-300 px-5 rounded-full py-2">Request a demo</button>
+                  </div>
               </div>
+              <!-- mobile nav -->
+              <div class="lg:hidden">
+                <button
+                  id="mobile-menu-button"
+                  class="navbar-burger flex items-center p-3"
+                >
+                  <img src="/ assets/menu-icon.svg" alt="" class="block h-4 w-4 fill-current">
+                </button>
+              </div>
+      
         </nav>
      </header>
 
@@ -70,15 +82,15 @@
                  <button class="bg-[#262626] text-white px-5 py-3 rounded-full">Request a demo<i class="ri-arrow-right-s-line"></i></button>
              </div>
              <!-- image -->
-              <div class=" relative top-32 left-24">
-                <img class="w-[700px]"  src="/ assets/1.png" alt="">
+              <div class="">
+                <img class="w-[841px]"  src="/ assets/1.png" alt="">
               </div>
         </div>
      </section>
 
      <!-- sponsor section -->
       <section class="py-10">
-        <div class="max-w-[1440px] mx-auto  ">
+        <div class=" container max-w-[1440px] mx-auto  ">
            <h1 class="font-semibold mt-28 text-center text-4xl text-[#8C8C8C] mb-14 ">Trusted by <span class="text-black">25,000+</span>  companies from <br> startups to enterprise</h1>
 
            <!-- sponsor -->
@@ -107,7 +119,7 @@
 
       <!--services section  -->
        <section class="py-10 bg-[#323232] rounded-[5%] sm:rounded-xl">
-        <div class="max-w-[1440px] mx-auto ">
+        <div class=" container max-w-[1300px] mx-auto ">
                <h1 class="text-5xl text-center mb-10 text-white font-semibold">You can do it all. <br>
                 With HireGO.</h1>
 
@@ -124,13 +136,13 @@
                     <!-- right card -->
                     <div class="w-1/3  space-y-4">
                         <!-- top -->
-                        <div class="bg-[#3a5c45] shadow-sm rounded-3xl px-6 py-6 pb-10">
+                        <div class="bg-[#3a5c45] shadow-sm rounded-3xl px-3 py-4 pb-10">
                             <h2 class="text-white font-medium text-4xl mb-4">Hire contractors</h2>
                             <p class="text-[#828282] mb-6">Generate, edit, and sign compliant contracts in minutes and <br> access management tools to streamline paperwork, onboarding, <br> and payments.</p>
                             <a class="px-5 py-3 font-semibold bg-white rounded-full " href="">Hire contractors <i class="ri-arrow-right-line"></i></a>
                         </div>
                          <!-- bottom -->
-                        <div class="bg-[#b1d8fc] px-6 py-12 pb-20 rounded-3xl">
+                        <div class="bg-[#b1d8fc] px-6 py-10 pb-16 rounded-3xl">
                             <h2 class=" font-medium text-4xl mb-4">Convert contractors to <br> employees</h2>
                             <p class="text-black pb-6">Assess global worker misclassification risks and compliantly convert contractors to full-timers, all under one platform.</p>
                             <a class="px-5 py-3 font-semibold bg-white rounded-full " href="">Convert contractors <i class="ri-arrow-right-line"></i></a>
@@ -158,7 +170,7 @@
     
        <!-- section 4 -->
         <section class="py-12">
-            <div class="max-w-[1240px] mx-auto">
+            <div class=" container max-w-[1240px] mx-auto">
                 <h1 class="text-5xl text-center  font-semibold mb-16 ">Take your business <br>
                     to the next level.</h1>
                 <div class="flex  flex-col md:flex-row sm:flex-col-reverse justify-between items-center gap-7">
@@ -177,7 +189,7 @@
         </section>
         <!-- section 5 -->
         <section class="py-12">
-            <div class="max-w-[1240px] mx-auto">
+            <div class=" container max-w-[1240px] mx-auto">
                 <div class="flex  flex-col md:flex-row-reverse sm:flex-col-reverse justify-between items-center gap-7 ">
                      <!-- text-content -->
                      <div class="">
@@ -196,12 +208,12 @@
 
         <!-- section-6 -->
          <section class="bg-[#323232] py-20 ">
-            <div class="max-w-[1240px] mx-auto  ">
+            <div class=" container max-w-[1200px] mx-auto  ">
                 <h1 class="text-5xl text-center text-white  font-semibold mb-16 ">We help teams grow faster <br> across borders.</h1>
 
                 <div class="flex sm:flex-col md:flex-row justify-start items-center   ">
                     <!-- text-content -->
-                     <div class="w-1/2 bg-[#b1d8fc] py-[131px] px-10 rounded-s-2xl ">
+                     <div class="w-1/2 bg-[#b1d8fc] py-[101px] px-10 rounded-s-2xl ">
                         <img class="mb-10" src="/ assets/Frame 8737.png" alt="">
                         <h2 class="text-black font-medium text-4xl mb-4">	“Saving time and simplifying the <br> process and saving money. It was the <br> triple trifecta.”</h2>
                         <p class="font-medium mb-10">Ally Fekaiki, CEO - Soho, New York</p>
@@ -214,5 +226,113 @@
                 </div>
             </div>
          </section>
+
+         <!-- section 7 -->
+          <section class="py-20">
+            <div class="container max-w-[1200px] mx-auto flex justify-center  sm:flex-col md:flex-row gap-6 ">
+                <!-- image -->
+                <div class="w-[592px]">
+                    <img class="w-full object-cover" src="/ assets/image-6.png" alt="">
+                </div>
+                 <!-- text-content -->
+                <div class="space-y-3">
+                    <div class="bg-[#ececec] rounded-[32px] px-10 py-5 pb-10">
+                        <div class="flex items-center gap-4 mb-4">
+                            <h1 class="text-white bg-[#9149ED] w-10 text-center p-2 rounded-full">3</h1>
+                            <h2 class="font-semibold text-2xl">Book a call</h2>
+                        </div>
+                        <p class="text-gray-500">Book a call with our global workforce consultants. We’ll set <br>  you up with a free account ready to suit your team’s needs</p>
+                    </div>
+                    <div class="bg-[#ececec] rounded-[32px] px-10 py-5 pb-10">
+                        <div class="flex items-center gap-4 mb-4">
+                            <h1 class="text-white bg-[#9149ED] w-10 text-center p-2 rounded-full">3</h1>
+                            <h2 class="font-semibold text-2xl">Add your people</h2>
+                        </div>
+                        <p class="text-gray-500">From new hires to your existing workforce, onboard <br>effortlessly with our self-serve platform.</p>
+                    </div>
+                    <div class="bg-[#ececec] rounded-[32px] px-10 py-5 pb-12">
+                        <div class="flex items-center gap-4 mb-4">
+                            <h1 class="text-white bg-[#9149ED] w-10 text-center p-2 rounded-full">3</h1>
+                            <h2 class="font-semibold text-2xl">Dedicated onboarding</h2>
+                        </div>
+                        <p class="text-gray-500 pb-7">From navigating local laws to support for your team <br> members, our dedicated team will help you get set up <br> seamlessly.</p>
+                            <a class="px-5 py-3 font-semibold bg-white rounded-full border border-gray-500 " href="">Start Now <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- footer -->
+           <section class="bg-[#1b1b1b] py-20">
+            <div class="container mx-auto max-w-[1200px]">
+                <h1 class="text-center text-white font-semibold text-6xl leading-[1.2] mb-10"> Work easy.<br>Grow further with HireGo.</h1>
+                <div class="w-48 mx-auto mb-24">
+                    <a class="px-5 py-4   font-semibold bg-white rounded-full border-none shadow-sm " href="">Request a demo <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <hr class="pb-20">
+                <div class="flex sm:flex-col md:flex-row justify-center gap-3 pb-12">
+                    <!-- left -->
+                     <div class=" w-[45%]">
+                        <h1 class="font-semibold text-2xl text-white mb-4">HireGo</h1>
+                        <div class="space-y-[550px]">
+                            <div class="text-white space-x-3">
+                                <a class="w-40 rounded-full p-2 bg-[#4a4a4a]" href="#"><i class="ri-twitter-x-line text-xl text-center"></i></a>
+                                <a class="w-40 rounded-full p-2 bg-[#4a4a4a]" href="#"><i class="ri-linkedin-line text-xl text-center"></i></a>
+                                <a class="w-40 rounded-full p-2 bg-[#4a4a4a]" href="#"><i class="ri-facebook-line text-xl text-center"></i></a>
+                                <a class="w-40 rounded-full p-2 bg-[#4a4a4a]" href="#"><i class="ri-instagram-line text-xl text-center"></i></a>   
+                            </div>
+                            <button class="text-white"><i class="ri-global-line mr-2"></i>English</button>
+                        </div>
+                     </div>
+                     <!-- right -->
+                      <div class=" w-[55%] flex sm:flex-col md:flex-row justify-between">
+                        <div class="flex flex-col gap-6 text-[#515151]">
+                            <h2 class="text-white">How it works</h2>
+                            <p>Hire Employees</p>
+                            <p>Hire Contractors</p>
+                            <p>Run Global Payroll</p>
+                            <p>App Store</p>
+                            <p>Open API</p>
+                        </div>
+                        <div class="flex flex-col gap-6 text-[#515151]">
+                            <h2 class="text-white">Solutions</h2>
+                            <p>Compliance</p>
+                            <p>Payments</p>
+                            <p>For Finance Teams</p>
+                            <p>For Legal Teams</p>
+                            <p>For Hiring Managers</p>
+                            <p>Startup</p>
+                            <p>Enterprise</p>
+                        </div>
+                        <div class="flex flex-col gap-6 text-[#515151]">
+                            <h2 class="text-white">Resources</h2>
+                            <p>About</p>
+                            <p>Blog</p>
+                            <p>Support hub</p>
+                            <p>Global Hiring Guide</p>
+                            <p>Partner Program</p>
+                            <p>Affiliates</p>
+                            <p>Case Studies</p>
+                            <p>Careers</p>
+                            <p>Glossary</p>
+                            <p>Press</p>
+                            <p>Service Status</p>
+                            <p>Worker Community</p>
+                        </div>
+                      </div>
+                </div>
+                <hr class="mb-10">
+                <div class="flex justify-between items-center">
+                    <p class="text-white text-sm">© Copyright 2024. All Rights Reserved.</p>
+                    <div class="flex gap-4 text-[#515151]">
+                     <p>Privacy Policy</p>
+                     <p>Terms of Service</p>
+                     <p>Whistleblower Policy</p>
+                     <p>Cookie policy</p>
+                     <p>Cookie Settings</p>
+                    </div>
+                </div>
+            </div>
+           </section>
 </body>
 </html>
